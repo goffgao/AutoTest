@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Main-Class: cn.wt.config.POP3ReceiveMailTest
+Class-Path: lib/commons-logging-1.2.jar testng-6.10.jar activation-1.1.j
+ ar commons-codec-1.10.jar mail-1.4.7.jar json-20170516.jar lombok-1.16.
+ 16.jar httpcore-4.4.6.jar httpclient-4.1.2.jar fastjson-1.2.60.jar jcom
+ mander-1.48.jar
+

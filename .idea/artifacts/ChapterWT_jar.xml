@@ -1,0 +1,26 @@
+<component name="ArtifactManager">
+  <artifact name="ChapterWT:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/ChapterWT_jar</output-path>
+    <root id="root">
+      <element id="archive" name="ChapterWT.jar">
+        <element id="directory" name="META-INF">
+          <element id="file-copy" path="$PROJECT_DIR$/ChapterWT/src/META-INF/MANIFEST.MF" />
+        </element>
+        <element id="module-output" name="ChapterWT" />
+      </element>
+      <element id="directory" name="lib">
+        <element id="library" level="project" name="Maven: com.alibaba:fastjson:1.2.60" />
+        <element id="library" level="project" name="Maven: javax.mail:mail:1.4.7" />
+        <element id="library" level="project" name="Maven: com.beust:jcommander:1.48" />
+        <element id="library" level="project" name="Maven: commons-codec:commons-codec:1.10" />
+        <element id="library" level="project" name="Maven: commons-logging:commons-logging:1.2" />
+        <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpclient:4.1.2" />
+        <element id="library" level="project" name="Maven: javax.activation:activation:1.1" />
+        <element id="library" level="project" name="Maven: org.json:json:20170516" />
+        <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpcore:4.4.6" />
+        <element id="library" level="project" name="Maven: org.projectlombok:lombok:1.16.16" />
+        <element id="library" level="project" name="Maven: org.testng:testng:6.10" />
+      </element>
+    </root>
+  </artifact>
+</component>
