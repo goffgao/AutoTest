@@ -1,5 +1,5 @@
 package cn.wt.model;
 
 public enum InterfaceName {
-    DEVEKIOGAKKBANECASE,KIGUBEXUST
+    HALLNAME,LOGINEXIST
 }

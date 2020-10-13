@@ -1,11 +1,9 @@
 package cn.wt.cases;
 
-import cn.wt.config.POP3ReceiveMailTest;
-import cn.wt.model.DevelopHallNameCase;
+import cn.wt.model.HallNameCase;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.CookieStore;
 import org.apache.http.client.methods.HttpPost;
-import org.apache.http.cookie.Cookie;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.util.EntityUtils;
@@ -13,10 +11,8 @@ import org.json.JSONObject;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import java.util.List;
 import java.util.Locale;
 import java.util.ResourceBundle;
-import java.util.concurrent.TimeUnit;
 
 
 public class QueryOrder {
@@ -66,7 +62,7 @@ public class QueryOrder {
     }
 
     public static void main(String[] args) {
-        DevelopHallNameCase hall = new DevelopHallNameCase();
+        HallNameCase hall = new HallNameCase();
         hall.setId(1);
         System.out.println(hall.getId());
     }

@@ -3,7 +3,7 @@ package cn.wt.model;
 import lombok.Data;
 
 @Data
-public class DevelopHallNameCase {
+public class HallNameCase {
     private int id;
     private String developPersonId;
     private String expected;
