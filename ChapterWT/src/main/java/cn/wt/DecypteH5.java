@@ -53,10 +53,9 @@ public class DecypteH5 {
 
     // 只能有一个main函数所以用1干扰
     public static void main1(String[] args) throws Exception{
-        JSONObject pdata = new JSONObject();
-        pdata.put("channel","h5");
-        pdata.put("time","1589774730695");
-        pdata.put("version","1.0.0");
+
+
+
         JSONObject data = new JSONObject();
 
         data.put("developPerson","88888888");
@@ -64,17 +63,20 @@ public class DecypteH5 {
         data.put("spuId","20200402160023301765390");
         data.put("effectType","COMM");
 
+        JSONObject pdata = new JSONObject();
+        pdata.put("channel","h5");
+        pdata.put("time","1589774730695");
+        pdata.put("version","1.0.0");
         pdata.put("sdt",encrypt(data.toJSONString(), REQUEST_KEY));
-        pdata.put("data","");
         System.out.println("加密后的数据:\n"+pdata.toJSONString());
-        //        解密
-        pdata.put("data",DesDecrypt(pdata.getString("sdt"),REQUEST_KEY));
-        pdata.put("sdt","");
+        //解密
+//        pdata.put("data",DesDecrypt(pdata.getString("sdt"),REQUEST_KEY));
+//        pdata.put("sdt","");
         System.out.println("解密的数据:\n\n" +pdata.toJSONString());
     }
 
     // 请求
-    public static void main33(String[] args) throws Exception{
+    public static void main(String[] args) throws Exception{
         Scanner scanner = new Scanner(System.in);
         System.out.println("输入解密json数据:\n");
         JSONObject jsonParser = JSONObject.parseObject(scanner.next());
@@ -86,7 +88,7 @@ public class DecypteH5 {
 
     }
     // 响应
-    public static void main(String[] args) throws Exception{
+    public static void main33(String[] args) throws Exception{
         Scanner scanner = new Scanner(System.in);//你给的数据
         System.out.println("输入解密密json数据:\n");
         JSONObject jsonParser = JSONObject.parseObject(scanner.next());

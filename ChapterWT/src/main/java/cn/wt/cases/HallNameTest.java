@@ -1,21 +1,23 @@
 package cn.wt.cases;
 
+import cn.wt.DecypteH5;
 import cn.wt.model.HallNameCase;
 import cn.wt.utils.DatabaseUtil;
 import cn.wt.config.TestConfig;
 import cn.wt.model.InterfaceName;
 import cn.wt.utils.ConfigFile;
-import com.tester.model.LoginCase;
+import com.alibaba.fastjson.JSONObject;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.util.EntityUtils;
 import org.apache.ibatis.session.SqlSession;
-import org.json.JSONObject;
+import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import javax.sound.midi.Soundbank;
 import java.io.IOException;
 
 public class HallNameTest {
@@ -27,14 +29,53 @@ public class HallNameTest {
 
     }
 
+    @Test
+    private String getResult(HallNameCase hallNameCase) throws Exception {
+        //设置接口请求链接
+        HttpPost post = new HttpPost(TestConfig.hallName);
+        //设置请求头信息 设置header
+        post.setHeader("content-type","application/json");
+        //设置请求信息和加密
+        com.alibaba.fastjson.JSONObject data = new com.alibaba.fastjson.JSONObject();
+        data.put("developPersonId",hallNameCase.getDevelopPersonId());
+        System.out.println(data.toString());
+        com.alibaba.fastjson.JSONObject pdata = new JSONObject();
+        pdata.put("sdt",data.toJSONString());
+        pdata.put("sdt",DecypteH5.H5_sdt_en(pdata.toJSONString()));
+        pdata.put("channel","h5");
+        pdata.put("time","1589774730695");
+        pdata.put("version","1.0.0");
+        System.out.println(pdata.toString());
+        //将参数信息添加到方法中
+        StringEntity entity = new StringEntity(pdata.toString(),"utf-8");
+        post.setEntity(entity);
+        //声明一个对象来进行响应结果的存储
+        String result;
+        //执行post方法
+        HttpResponse response = cn.wt.config.TestConfig.defaultHttpClient.execute(post);
+        //获取响应结果
+        result = EntityUtils.toString(response.getEntity(),"utf-8");
+        System.out.println("打印出结果"+result);
+        //获取cookies为了保持持续通讯
+        cn.wt.config.TestConfig.store =  cn.wt.config.TestConfig.defaultHttpClient.getCookieStore();
+        return result;
+    }
 
 
     @Test
-    public void loginTrue() throws IOException { // session调用配置文件中 链接数据库,查询语句获取结果
+    public void HallNameTest() throws Exception { // session调用配置文件中 链接数据库,查询语句获取结果
         SqlSession session = DatabaseUtil.getSqlSession();
-        HallNameCase developHallNameCase = session.selectOne("developHallNameCase",1);
-        System.out.println(developHallNameCase.toString());
-//
+        HallNameCase hallNameCase = session.selectOne("hallNameCase",1);
+        System.out.println(hallNameCase.toString());
+        String result = DecypteH5.H5_srs_de(getResult(hallNameCase));
+        System.out.println(result);
+        JSONObject test = (JSONObject) JSONObject.parse(result);
+
+        String hallName = test.getJSONObject("srs").getString("hallName");
+        System.out.println(hallName);
+
+//        Assert.assertEquals(hallNameCase.getExpected(),result);
+
 
     }
     // httpsClient中的 需要变量

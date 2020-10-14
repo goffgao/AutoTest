@@ -5,9 +5,9 @@
 <mapper namespace="cn.wt.model">
 
     <!--获取登陆接口case-->
-    <select id="developHallNameCase" parameterType="Integer"  resultType="cn.wt.model.HallNameCase">
+    <select id="hallNameCase" parameterType="Integer"  resultType="cn.wt.model.HallNameCase">
 
-        select * from developHallNameCase
+        select * from hallNameCase
         where id = #{id};
     </select>
 

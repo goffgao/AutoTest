@@ -15,7 +15,6 @@ public class ConfigFile {
         String testUrl;
         if(name == InterfaceName.HALLNAME){
             uri = bundle.getString("hallName.uri");
-
         }
 
 //        if(name == InterfaceName.ADDUSERINFO){

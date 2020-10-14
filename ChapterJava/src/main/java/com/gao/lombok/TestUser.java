@@ -1,13 +1,9 @@
 package com.gao.lombok;
 
-import lombok.extern.slf4j.Slf4j;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import java.util.Date;
 
 public class TestUser {
-//    private Logger log = LoggerFactory.getLogger(this.getClass());
     public static void main(String[] args) {
         User user = new User();
 
