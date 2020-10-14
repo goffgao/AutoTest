@@ -74,7 +74,7 @@ public class HallNameTest {
         String hallName = test.getJSONObject("srs").getString("hallName");
         System.out.println(hallName);
 
-//        Assert.assertEquals(hallNameCase.getExpected(),result);
+        Assert.assertEquals(hallNameCase.getExpected(),result);
 
 
     }
