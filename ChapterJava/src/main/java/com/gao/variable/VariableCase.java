@@ -40,7 +40,6 @@ public class VariableCase {
 
         int age; // 局部变量
 //        System.out.println(age); // 没赋值不能用
-
 //        System.out.println(num); // 错误写法！
         System.out.println(name);
     }

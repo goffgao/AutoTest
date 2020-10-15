@@ -19,6 +19,8 @@ import org.testng.annotations.Test;
 
 import javax.sound.midi.Soundbank;
 import java.io.IOException;
+import java.util.Calendar;
+import java.util.Date;
 
 public class HallNameTest {
 
@@ -29,7 +31,10 @@ public class HallNameTest {
 
     }
 
-    @Test
+    public static void main(String[] args) {
+        System.out.println(System.currentTimeMillis());
+
+    }
     private String getResult(HallNameCase hallNameCase) throws Exception {
         //设置接口请求链接
         HttpPost post = new HttpPost(TestConfig.hallName);
@@ -43,7 +48,8 @@ public class HallNameTest {
         pdata.put("sdt",data.toJSONString());
         pdata.put("sdt",DecypteH5.H5_sdt_en(pdata.toJSONString()));
         pdata.put("channel","h5");
-        pdata.put("time","1589774730695");
+        //毫秒时间
+        pdata.put("time",System.currentTimeMillis());
         pdata.put("version","1.0.0");
         System.out.println(pdata.toString());
         //将参数信息添加到方法中
@@ -61,18 +67,19 @@ public class HallNameTest {
         return result;
     }
 
+    //定义一个方法
+
 
     @Test
     public void HallNameTest() throws Exception { // session调用配置文件中 链接数据库,查询语句获取结果
         SqlSession session = DatabaseUtil.getSqlSession();
         HallNameCase hallNameCase = session.selectOne("hallNameCase",1);
         System.out.println(hallNameCase.toString());
-        String result = DecypteH5.H5_srs_de(getResult(hallNameCase));
+        String response = DecypteH5.H5_srs_de(getResult(hallNameCase));
+        System.out.println(response);
+        JSONObject test = (JSONObject) JSONObject.parse(response);
+        String result = test.getJSONObject("srs").getString("hallName");
         System.out.println(result);
-        JSONObject test = (JSONObject) JSONObject.parse(result);
-
-        String hallName = test.getJSONObject("srs").getString("hallName");
-        System.out.println(hallName);
 
         Assert.assertEquals(hallNameCase.getExpected(),result);
 

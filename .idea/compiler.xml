@@ -11,12 +11,11 @@
         <module name="Chapter12" />
         <module name="Chapter11" />
         <module name="Chapter10" />
-        <module name="Chapter9" />
-        <module name="ChapterGit" />
-        <module name="Chapter13" />
-        <module name="Chapter6" />
-        <module name="Chapter5" />
         <module name="ChapterWT" />
+        <module name="Chapter9" />
+        <module name="Chapter5" />
+        <module name="Chapter6" />
+        <module name="Chapter13" />
         <module name="ChapterJava" />
       </profile>
     </annotationProcessing>
