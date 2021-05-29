@@ -1,4 +1,4 @@
-package com.gao;
+package com.ifandelse;
 
 public class IfElseifElse {
     public static void main(String[] args) {
