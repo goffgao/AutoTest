@@ -1,6 +1,4 @@
-package com.arrayandarrylist;
-
-import java.util.ArrayList;
+package com.array;
 
 public class ArrayReverse交互大小数据 {
     public static void main(String[] args) {

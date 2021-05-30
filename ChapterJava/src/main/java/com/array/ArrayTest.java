@@ -1,8 +1,8 @@
-package com.arrayandarrylist;
+package com.array;
 
 import java.util.ArrayList;
 
-public class ArrayAndArrayListTest {
+public class ArrayTest {
     public static void main(String[] args) {
         // array不能赋值为null 或者超出方位 int[3]以外 否则报空指针或者溢出
 
