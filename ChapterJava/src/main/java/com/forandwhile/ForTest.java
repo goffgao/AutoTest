@@ -33,7 +33,18 @@ for(声明语句 : 表达式)
 
         int [] numbers = {10, 20, 30, 40, 50};
 
-        for(int x : numbers ){
+        for (int i = 0; i < numbers.length; i++) {
+            int numberTest =0;
+            numberTest = numbers[i];
+            int numberTest2 =numbers[i];
+
+            System.out.println(numberTest2+"======");
+
+        }
+
+
+
+        for(int x : numbers ){  //int x是声明一个int变量名  然后接收 numbers中所有的String值
             System.out.print( x );
             System.out.print(",");
         }
