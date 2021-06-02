@@ -22,5 +22,7 @@ public class TestFrame {
 
         //设置大小固定 不能拉伸窗口
         frame.setResizable(false);
+
+
     }
 }
