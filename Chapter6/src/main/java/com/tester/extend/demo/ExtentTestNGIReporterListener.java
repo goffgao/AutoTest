@@ -1,6 +1,5 @@
 package com.tester.extend.demo;
 
-
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.ResourceCDN;
@@ -12,15 +11,19 @@ import com.aventstack.extentreports.reporter.configuration.Theme;
 import org.testng.*;
 import org.testng.xml.XmlSuite;
 
+
 import java.io.File;
 import java.util.*;
+
 
 public class ExtentTestNGIReporterListener implements IReporter {
     //生成的路径以及文件名
     private static final String OUTPUT_FOLDER = "test-output/";
     private static final String FILE_NAME = "index.html";
 
+
     private ExtentReports extent;
+
 
     @Override
     public void generateReport(List<XmlSuite> xmlSuites, List<ISuite> suites, String outputDirectory) {
@@ -93,13 +96,16 @@ public class ExtentTestNGIReporterListener implements IReporter {
                 }
             }
 
+
         }
 //        for (String s : Reporter.getOutput()) {
 //            extent.setTestRunnerOutput(s);
 //        }
 
+
         extent.flush();
     }
+
 
     private void init() {
         //文件夹不存在的话进行创建
@@ -112,6 +118,7 @@ public class ExtentTestNGIReporterListener implements IReporter {
         //怎么样解决cdn.rawgit.com访问不了的情况
         htmlReporter.config().setResourceCDN(ResourceCDN.EXTENTREPORTS);
 
+
         htmlReporter.config().setDocumentTitle("api自动化测试报告");
         htmlReporter.config().setReportName("api自动化测试报告");
         htmlReporter.config().setChartVisibilityOnOpen(true);
@@ -122,6 +129,7 @@ public class ExtentTestNGIReporterListener implements IReporter {
         extent.attachReporter(htmlReporter);
         extent.setReportUsesManualConfiguration(true);
     }
+
 
     private void buildTestNodes(ExtentTest extenttest, IResultMap tests, Status status) {
         //存在父节点时，获取父节点的标签
@@ -134,7 +142,9 @@ public class ExtentTestNGIReporterListener implements IReporter {
             }
         }
 
+
         ExtentTest test;
+
 
         if (tests.size() > 0) {
             //调整用例排序，按时间排序
@@ -170,6 +180,7 @@ public class ExtentTestNGIReporterListener implements IReporter {
                 for (String group : result.getMethod().getGroups())
                     test.assignCategory(group);
 
+
                 List<String> outputList = Reporter.getOutput(result);
                 for(String output:outputList){
                     //将用例的log输出报告中
@@ -182,11 +193,13 @@ public class ExtentTestNGIReporterListener implements IReporter {
                     test.log(status, "Test " + status.toString().toLowerCase() + "ed");
                 }
 
+
                 test.getModel().setStartTime(getTime(result.getStartMillis()));
                 test.getModel().setEndTime(getTime(result.getEndMillis()));
             }
         }
     }
+
 
     private Date getTime(long millis) {
         Calendar calendar = Calendar.getInstance();

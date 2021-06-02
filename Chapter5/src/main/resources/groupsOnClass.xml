@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<suite name="suitename">
-    <test name="runAll">
+<suite name="suite组的代码运行">
+    <test name="运行所有classes标签中的代码">
         <classes>
             <class name="com.course.testng.groups.GroupsOnClass1"/>
             <class name="com.course.testng.groups.GroupsOnClass2"/>
@@ -10,7 +10,13 @@
 
     </test>
 
-    <test name="onlyRunStu">
+    <test name="只运行classes中 @Test (groups=stu)">
+        <classes>
+            <class name="com.course.testng.groups.GroupsOnClass1"/>
+            <class name="com.course.testng.groups.GroupsOnClass2"/>
+            <class name="com.course.testng.groups.GroupsOnClass3"/>
+        </classes>
+
         <groups>
             <run>
                 <include name="stu"/>
@@ -18,11 +24,6 @@
 
         </groups>
 
-        <classes>
-            <class name="com.course.testng.groups.GroupsOnClass1"/>
-            <class name="com.course.testng.groups.GroupsOnClass2"/>
-            <class name="com.course.testng.groups.GroupsOnClass3"/>
-        </classes>
 
     </test>
 
