@@ -11,11 +11,11 @@
         <module name="Chapter12" />
         <module name="Chapter11" />
         <module name="Chapter10" />
-        <module name="ChapterWT" />
+        <module name="Chapter5TestNg" />
+        <module name="Chapter13TestNgMyBaits" />
         <module name="Chapter9" />
-        <module name="Chapter5" />
-        <module name="Chapter6" />
-        <module name="Chapter13" />
+        <module name="ChapterWT" />
+        <module name="Chapter6TestNgRespot" />
         <module name="ChapterJava" />
       </profile>
     </annotationProcessing>
@@ -26,9 +26,9 @@
       <module name="Chapter10" target="1.8" />
       <module name="Chapter11" target="1.8" />
       <module name="Chapter12" target="1.8" />
-      <module name="Chapter13" target="1.8" />
-      <module name="Chapter5" target="1.5" />
-      <module name="Chapter6" target="1.8" />
+      <module name="Chapter13TestNgMyBaits" target="1.8" />
+      <module name="Chapter5TestNg" target="1.5" />
+      <module name="Chapter6TestNgRespot" target="1.8" />
       <module name="Chapter9" target="1.8" />
       <module name="ChapterGit" target="1.8" />
       <module name="ChapterJava" target="1.8" />
