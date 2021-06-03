@@ -8,14 +8,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Chapter" />
-        <module name="Chapter12" />
-        <module name="Chapter11" />
-        <module name="Chapter10" />
-        <module name="Chapter5TestNg" />
+        <module name="Chapter9HttpClient" />
+        <module name="Chapter12MyBatisMySQL" />
         <module name="Chapter13TestNgMyBaits" />
-        <module name="Chapter9" />
-        <module name="ChapterWT" />
+        <module name="Chapter5TestNg" />
+        <module name="Chapter10SprintBoot" />
         <module name="Chapter6TestNgRespot" />
+        <module name="Chapter11MyBatis" />
+        <module name="ChapterWT" />
         <module name="ChapterJava" />
       </profile>
     </annotationProcessing>
@@ -23,13 +23,13 @@
       <module name="AutoTest" target="1.8" />
       <module name="AutoTest2" target="1.8" />
       <module name="Chapter" target="1.5" />
-      <module name="Chapter10" target="1.8" />
-      <module name="Chapter11" target="1.8" />
-      <module name="Chapter12" target="1.8" />
+      <module name="Chapter10SprintBoot" target="1.8" />
+      <module name="Chapter11MyBatis" target="1.8" />
+      <module name="Chapter12MyBatisMySQL" target="1.8" />
       <module name="Chapter13TestNgMyBaits" target="1.8" />
       <module name="Chapter5TestNg" target="1.5" />
       <module name="Chapter6TestNgRespot" target="1.8" />
-      <module name="Chapter9" target="1.8" />
+      <module name="Chapter9HttpClient" target="1.8" />
       <module name="ChapterGit" target="1.8" />
       <module name="ChapterJava" target="1.8" />
       <module name="ChapterWT" target="1.8" />

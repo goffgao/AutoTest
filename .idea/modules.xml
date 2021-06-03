@@ -3,13 +3,13 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/AutoTest.iml" filepath="$PROJECT_DIR$/.idea/AutoTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Chapter10/Chapter10.iml" filepath="$PROJECT_DIR$/Chapter10/Chapter10.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Chapter11/Chapter11.iml" filepath="$PROJECT_DIR$/Chapter11/Chapter11.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Chapter12/Chapter12.iml" filepath="$PROJECT_DIR$/Chapter12/Chapter12.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter10SprintBoot/Chapter10SprintBoot.iml" filepath="$PROJECT_DIR$/Chapter10SprintBoot/Chapter10SprintBoot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter11MyBatis/Chapter11MyBatis.iml" filepath="$PROJECT_DIR$/Chapter11MyBatis/Chapter11MyBatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter12MyBatisMySQL/Chapter12MyBatisMySQL.iml" filepath="$PROJECT_DIR$/Chapter12MyBatisMySQL/Chapter12MyBatisMySQL.iml" />
       <module fileurl="file://$PROJECT_DIR$/Chapter13TestNgMyBaits/Chapter13TestNgMyBaits.iml" filepath="$PROJECT_DIR$/Chapter13TestNgMyBaits/Chapter13TestNgMyBaits.iml" />
       <module fileurl="file://$PROJECT_DIR$/Chapter5TestNg/Chapter5TestNg.iml" filepath="$PROJECT_DIR$/Chapter5TestNg/Chapter5TestNg.iml" />
       <module fileurl="file://$PROJECT_DIR$/Chapter6TestNgRespot/Chapter6TestNgRespot.iml" filepath="$PROJECT_DIR$/Chapter6TestNgRespot/Chapter6TestNgRespot.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Chapter9/Chapter9.iml" filepath="$PROJECT_DIR$/Chapter9/Chapter9.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter9HttpClient/Chapter9HttpClient.iml" filepath="$PROJECT_DIR$/Chapter9HttpClient/Chapter9HttpClient.iml" />
       <module fileurl="file://$PROJECT_DIR$/ChapterJava/ChapterJava.iml" filepath="$PROJECT_DIR$/ChapterJava/ChapterJava.iml" />
       <module fileurl="file://$PROJECT_DIR$/ChapterWT/ChapterWT.iml" filepath="$PROJECT_DIR$/ChapterWT/ChapterWT.iml" />
     </modules>

@@ -2,18 +2,18 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/Chapter10" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/Chapter10/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/Chapter11" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/Chapter11/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/Chapter12" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/Chapter12/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Chapter10SprintBoot" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Chapter10SprintBoot/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Chapter11MyBatis" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Chapter11MyBatis/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Chapter12MyBatisMySQL" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Chapter12MyBatisMySQL/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Chapter13TestNgMyBaits" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Chapter13TestNgMyBaits/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Chapter6TestNgRespot" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Chapter6TestNgRespot/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/Chapter9" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/Chapter9/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Chapter9HttpClient" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Chapter9HttpClient/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ChapterJava" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ChapterJava/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ChapterWT" charset="UTF-8" />
