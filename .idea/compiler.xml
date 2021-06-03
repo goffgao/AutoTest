@@ -7,14 +7,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="Chapter5TestNg" />
         <module name="Chapter" />
         <module name="Chapter9HttpClient" />
         <module name="Chapter12MyBatisMySQL" />
-        <module name="Chapter13TestNgMyBaits" />
-        <module name="Chapter5TestNg" />
+        <module name="Chapter6TestNgResport" />
         <module name="Chapter10SprintBoot" />
-        <module name="Chapter6TestNgRespot" />
         <module name="Chapter11MyBatis" />
+        <module name="Chapter13TestNgMyBaits" />
         <module name="ChapterWT" />
         <module name="ChapterJava" />
       </profile>
@@ -28,7 +28,7 @@
       <module name="Chapter12MyBatisMySQL" target="1.8" />
       <module name="Chapter13TestNgMyBaits" target="1.8" />
       <module name="Chapter5TestNg" target="1.5" />
-      <module name="Chapter6TestNgRespot" target="1.8" />
+      <module name="Chapter6TestNgResport" target="1.8" />
       <module name="Chapter9HttpClient" target="1.8" />
       <module name="ChapterGit" target="1.8" />
       <module name="ChapterJava" target="1.8" />

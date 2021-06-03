@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>Chapter11</artifactId>
+    <artifactId>Chapter11MyBatis</artifactId>
 
     <dependencies>
         <dependency>

@@ -10,7 +10,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>Chapter12</artifactId>
+    <artifactId>Chapter12MyBatisMySQL</artifactId>
 
 
 <!--    依赖-->
