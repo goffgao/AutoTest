@@ -11,7 +11,7 @@ spring:
           name: report
    datasource:
        driver-class-name: com.mysql.jdbc.Driver
-       url: jdbc:mysql://goffgao1.51vip.biz:56631/course?serverTimezone=GMT
+       url: jdbc:mysql://192.168.85.100:3306/course?serverTimezone=GMT
        username: 'root'
        password: '@123456Qw'
 

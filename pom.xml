@@ -27,7 +27,7 @@
     <modules>
 
         <module>Chapter5TestNg</module>
-        <module>Chapter6TestNgResport</module>
+        <module>Chapter6TestNgReport</module>
         <module>Chapter9HttpClient</module>
         <module>Chapter10SprintBoot</module>
         <module>Chapter11MyBatis</module>
