@@ -32,9 +32,10 @@
         <module>Chapter10SprintBoot</module>
         <module>Chapter11MyBatis</module>
         <module>Chapter12MyBatisMySQL</module>
-        <module>Chapter13TestNgMyBaits</module>
+        <module>Chapter13TestNgMyBatis</module>
         <module>ChapterWT</module>
         <module>ChapterJava</module>
+        <module>Chapter13TestNgMyBatis</module>
 
 
     </modules>

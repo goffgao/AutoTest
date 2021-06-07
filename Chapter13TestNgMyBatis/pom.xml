@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>Chapter13TestNgMyBaits</artifactId>
+    <artifactId>Chapter13TestNgMyBatis</artifactId>
 
     <dependencies>
         <dependency>
@@ -56,7 +56,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-<!--                    只有这里名字不一样-->
+                    <!--                    只有这里名字不一样-->
                     <mainClass>Application</mainClass>
                 </configuration>
                 <executions>

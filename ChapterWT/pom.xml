@@ -60,7 +60,7 @@
         </dependency>
         <dependency>
             <groupId>com.course.code</groupId>
-            <artifactId>Chapter12</artifactId>
+            <artifactId>Chapter12MyBatisMySQL</artifactId>
             <version>1.0-SNAPSHOT</version>
             <scope>compile</scope>
         </dependency>
